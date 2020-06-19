@@ -1,17 +1,22 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
+import Auxi from '../../hoc/Auxi';
 import classes from './Layout.css';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+
 
 
 // this is a functional component
 
 const Layout = ( props ) => (
-    <Aux>
-        <div>Toolbar</div>
+    <Auxi>
+        <Toolbar></Toolbar>
+        <SideDrawer/>
         <main className={classes.Content}>
+        <h2 className={classes.TitleName}>The Burger App</h2>
             {props.children}
         </main>
-    </Aux>
+    </Auxi>
 
 )
 

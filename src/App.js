@@ -14,7 +14,6 @@ class App extends Component {
     return (
       // <StyleRoot>
       <div>
-        <h1>Hello Burger App</h1>
         <Layout>
             <BurgerBuilder/>
         </Layout>
