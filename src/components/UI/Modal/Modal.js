@@ -10,7 +10,7 @@ class Modal extends Component{
 
     // controlling the updating the order summary wrapped by Modal
     shouldComponentUpdate(nextProps, nextState){
-        if(nextProps.show !== this.props.show){
+        if(nextProps.show !== this.props.show || nextProps.children !== this.props.children){
             return true;
         }
 
